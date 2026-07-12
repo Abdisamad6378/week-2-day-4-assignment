@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 Modal System</h1>
+        <p class="subtitle">Click any button to open a modal</p>
+        
+        <div class="modal-buttons">
+            <button class="btn-primary" data-modal="modal1">Learn About JavaScript</button>
+            <button class="btn-primary" data-modal="modal2">Learn About CSS</button>
+            <button class="btn-primary" data-modal="modal3">Learn About HTML</button>
+        </div>
+    </div>
+
+    <!-- Modal 1: JavaScript -->
+    <div id="modal1" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>📘 JavaScript</h2>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>JavaScript is a programming language that adds interactivity to websites. It allows you to create dynamic content, control multimedia, animate images, and much more.</p>
+                <p>Key features include:</p>
+                <ul>
+                    <li>DOM manipulation</li>
+                    <li>Event handling</li>
+                    <li>Asynchronous programming</li>
+                    <li>ES6+ features</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-close-modal">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: CSS -->
+    <div id="modal2" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>🎨 CSS</h2>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>CSS (Cascading Style Sheets) is used to style and layout web pages. It controls the look and feel of your website.</p>
+                <p>Key concepts include:</p>
+                <ul>
+                    <li>Selectors and properties</li>
+                    <li>Flexbox and Grid</li>
+                    <li>Animations and transitions</li>
+                    <li>Responsive design</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-close-modal">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: HTML -->
+    <div id="modal3" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>🌐 HTML</h2>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>HTML (HyperText Markup Language) is the standard markup language for creating web pages. It structures the content on the web.</p>
+                <p>Key elements include:</p>
+                <ul>
+                    <li>Semantic HTML5 tags</li>
+                    <li>Forms and inputs</li>
+                    <li>Multimedia elements</li>
+                    <li>Accessibility features</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-close-modal">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="modal.js"></script>
+</body>
+</html>
