@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag & Drop List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Priority Tasks</h1>
+        <p class="subtitle">Drag and drop to reorder tasks</p>
+        
+        <div class="drag-card">
+            <ul id="taskList" class="task-list">
+                <li draggable="true" data-id="1" class="task-item">
+                    <span class="priority">1.</span>
+                    <span class="task-text">Deploy website to production</span>
+                </li>
+                <li draggable="true" data-id="2" class="task-item">
+                    <span class="priority">2.</span>
+                    <span class="task-text">Fix login bug</span>
+                </li>
+                <li draggable="true" data-id="3" class="task-item">
+                    <span class="priority">3.</span>
+                    <span class="task-text">Write unit tests</span>
+                </li>
+                <li draggable="true" data-id="4" class="task-item">
+                    <span class="priority">4.</span>
+                    <span class="task-text">Update documentation</span>
+                </li>
+                <li draggable="true" data-id="5" class="task-item">
+                    <span class="priority">5.</span>
+                    <span class="task-text">Review pull requests</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="drag-info">
+            <p> Tip: Drag items up or down to reorder them</p>
+        </div>
+    </div>
+    <script src="drag.js"></script>
+</body>
+</html>
